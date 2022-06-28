@@ -6,6 +6,7 @@
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.245" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_bottom.xml" value="0.245" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_circle.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_findnumber_bg.xml" value="0.245" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_identification.xml" value="0.245" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_identification_bg.xml" value="0.245" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_launcher_background.xml" value="0.245" />
@@ -21,9 +22,10 @@
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_tof_bg.xml" value="0.245" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_top.xml" value="0.2265" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_trueorfalse.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_trueorfalse_bg.xml" value="0.245" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_versus.xml" value="0.245" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_versus_bg.xml" value="0.245" />
-        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_game_find_the_number.xml" value="0.2" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_game_find_the_number.xml" value="0.536" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_game_over.xml" value="0.2" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_game_solo.xml" value="0.2" />
         <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_game_tof.xml" value="0.4" />
