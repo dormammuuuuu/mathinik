@@ -90,6 +90,7 @@ public class GameSolo extends AppCompatActivity {
             public void onFinish() {
                 Intent soloIntent = new Intent(GameSolo.this, GameOver.class);
                 soloIntent.putExtra("score", score);
+                soloIntent.putExtra("mode", "solo");
                 GameSolo.this.startActivity(soloIntent);
                 finish();
             }
@@ -187,7 +188,6 @@ public class GameSolo extends AppCompatActivity {
             }
             tempRange.add(i);
         }
-        Log.d("temprange", tempRange.toString());
         if (operator == 3){
             double quotient = (double) num1 / num2;
             decimal = String.format("%.2f", quotient);

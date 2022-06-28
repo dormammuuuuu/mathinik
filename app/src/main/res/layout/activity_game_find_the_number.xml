@@ -4,6 +4,582 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".GameFindTheNumber">
 
+    <LinearLayout
+        android:id="@+id/pausebtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_scoreboard"
+        android:backgroundTint="@color/identification"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer">
+
+        <LinearLayout
+            android:id="@+id/pause_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_pause"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_scoreboard"
+        android:backgroundTint="@color/identification"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="13dp"
+        android:paddingTop="5dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="5dp"
+        android:text="Score: 0"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+    <ProgressBar
+        android:id="@+id/timer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/randNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="17"
+        android:textColor="@color/white_200"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer"
+        app:layout_constraintVertical_bias="0.688" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn9"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn11"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn12"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn13"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn14"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn15"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn16"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn17"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn18"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn19"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn20"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn21"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn22"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn23"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn24"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn25"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn26"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn27"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn28"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn29"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn30"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/btn31"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn32"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn33"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn34"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn35"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btn36"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/ic_solo_guess_bg"
+                android:backgroundTint="@color/identification"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="12"
+                android:textColor="@color/background"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

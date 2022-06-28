@@ -7,6 +7,108 @@
     android:background="@color/background"
     tools:context=".GameTOF">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer">
+
+        <TextView
+            android:id="@+id/display_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="@font/poppins_bold"
+            android:text="20"
+            android:textColor="@color/white_200"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/display_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="0"
+            android:fontFamily="@font/poppins_bold"
+            android:text="+"
+            android:textColor="@color/white_200"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/display_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="@font/poppins_bold"
+            android:text="20"
+            android:textColor="@color/white_200"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/equal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="0"
+            android:fontFamily="@font/poppins_bold"
+            android:text="="
+            android:textColor="@color/white_200"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/display_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="@font/poppins_bold"
+            android:text="40"
+            android:textColor="@color/white_200"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pausebtn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_scoreboard"
+        android:backgroundTint="@color/tof"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer">
+
+        <LinearLayout
+            android:id="@+id/pause_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_pause"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_scoreboard"
+        android:backgroundTint="@color/tof"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingLeft="13dp"
+        android:paddingTop="5dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="5dp"
+        android:text="Score: 0"
+        android:textColor="@color/background"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer" />
+
     <ProgressBar
         android:id="@+id/timer"
         style="?android:attr/progressBarStyleHorizontal"
@@ -15,4 +117,43 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/ic_solo_guess_bg_correct"
+            android:fontFamily="@font/poppins_medium"
+            android:text="FALSE"
+            android:textColor="@color/background"
+            android:textSize="24sp"
+            app:backgroundTint="@color/tof" />
+
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/ic_solo_guess_bg_correct"
+            android:fontFamily="@font/poppins_medium"
+            android:text="TRUE"
+            android:textColor="@color/background"
+            android:textSize="24sp"
+            app:backgroundTint="@color/tof" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

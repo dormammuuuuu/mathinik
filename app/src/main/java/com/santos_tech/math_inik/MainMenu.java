@@ -37,7 +37,7 @@ public class MainMenu extends AppCompatActivity {
         DisplayMetrics displaymetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
         int screenWidth = displaymetrics.widthPixels;
-        int button_width = (int) (screenWidth * 0.35); // 35% of screen.
+        int button_width = (int) (screenWidth * 0.40); // 35% of screen.
         int button_height = button_width;
 
         solo.getLayoutParams().height = button_height;
@@ -62,6 +62,15 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent tofIntent = new Intent(MainMenu.this, GameTOF.class);
+                MainMenu.this.startActivity(tofIntent);
+                finish();
+            }
+        });
+
+        identification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tofIntent = new Intent(MainMenu.this, GameFindTheNumber.class);
                 MainMenu.this.startActivity(tofIntent);
                 finish();
             }
