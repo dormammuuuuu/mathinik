@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_bottom.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_circle.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_identification.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_identification_bg.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_launcher_background.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_over.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_pause.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_play.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_scoreboard.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_solo.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_solo_bg.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_solo_guess_bg.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_solo_guess_bg_correct.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_solo_guess_bg_wrong.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_tof_bg.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_top.xml" value="0.2265" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_trueorfalse.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_versus.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/drawable/ic_versus_bg.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_game_find_the_number.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_game_over.xml" value="0.2" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_game_solo.xml" value="0.2" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_game_tof.xml" value="0.2" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_main_menu.xml" value="0.2" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/layout/pause_dialog.xml" value="0.264" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.245" />
+        <entry key="..\:/Users/jeric/AndroidStudioProjects/MATHINIK/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.245" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
