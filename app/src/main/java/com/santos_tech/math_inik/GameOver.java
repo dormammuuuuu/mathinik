@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.os.Bundle;
 
 public class GameOver extends AppCompatActivity {
-    int score, highscore;
+    int score, highscore, score_p1, score_p2;
     TextView user_score, high_score;
     Button menu_over, restart_over;
     @Override
@@ -25,18 +25,26 @@ public class GameOver extends AppCompatActivity {
         restart_over = findViewById(R.id.restart_over);
 
         Intent intent = getIntent();
-        score = intent.getIntExtra("score", 0);
+
         String mode = intent.getStringExtra("mode");
 
-        loadHighScore(mode);
-
-        if (score > highscore){
-            savescore(mode);
-            highscore = score;
+        if (!mode.equals("vs")){
+            score = intent.getIntExtra("score", 0);
+            loadHighScore(mode);
+            if (score > highscore){
+                savescore(mode);
+                highscore = score;
+            }
+            user_score.setText("Your score: " + score);
+            high_score.setText("High Score: " + highscore);
+        } else {
+            score_p1 = intent.getIntExtra("score_p1", 0);
+            score_p2 = intent.getIntExtra("score_p2", 0);
+            user_score.setText("Player 1: " + score_p1);
+            high_score.setText("Player 2: " + score_p2);
         }
 
-        user_score.setText("Your score: " + score);
-        high_score.setText("High Score: " + highscore);
+
 
         restart_over.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,8 +54,10 @@ public class GameOver extends AppCompatActivity {
                     loadIntent = new Intent(GameOver.this, GameTOF.class);
                 } else if (mode.equals("find")) {
                     loadIntent = new Intent(GameOver.this, GameFindTheNumber.class);
-                } else {
+                } else if (mode.equals("solo")){
                     loadIntent = new Intent(GameOver.this, GameSolo.class);
+                } else {
+                    loadIntent = new Intent(GameOver.this, GameVersus.class);
                 }
                 GameOver.this.startActivity(loadIntent);
                 finish();

@@ -10,11 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MATHINIK">
         <activity
+            android:name=".GameVersus"
+            android:exported="false"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".GameTOF"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".GameFindTheNumber"
-            android:exported="false" />
+            android:exported="false"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SplashScreen"
             android:configChanges="orientation"

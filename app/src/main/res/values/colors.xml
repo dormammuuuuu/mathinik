@@ -15,4 +15,6 @@
     <color name="solo">#ffc0dfdc</color>
     <color name="white_200">#eaeaea</color>
     <color name="wrong">#f49089</color>
+    <color name="player_one">#0E4292</color>
+    <color name="player_two">#FE4948</color>
 </resources>

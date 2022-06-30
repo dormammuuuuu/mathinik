@@ -56,11 +56,14 @@
 
     <TextView
         android:id="@+id/randNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/ic_scoreboard"
+        android:backgroundTint="@color/identification"
         android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
         android:text="17"
-        android:textColor="@color/white_200"
+        android:textColor="@color/background"
         android:textSize="45sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintEnd_toEndOf="parent"

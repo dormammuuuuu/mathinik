@@ -58,6 +58,15 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
+        versus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent tofIntent = new Intent(MainMenu.this, GameVersus.class);
+                MainMenu.this.startActivity(tofIntent);
+                finish();
+            }
+        });
+
         tof.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

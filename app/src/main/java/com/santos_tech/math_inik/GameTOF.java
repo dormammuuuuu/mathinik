@@ -46,7 +46,7 @@ public class GameTOF extends AppCompatActivity {
 
         timer = findViewById(R.id.timer);
         display_num1 = findViewById(R.id.display_num1);
-        display_operator = findViewById(R.id.display_operator);
+        display_operator = findViewById(R.id.display_operator_p1);
         display_num2 = findViewById(R.id.display_num2);
         display_ans = findViewById(R.id.display_ans);
         scoreboard = findViewById(R.id.scoreboard);
