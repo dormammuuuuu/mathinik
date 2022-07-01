@@ -47,7 +47,7 @@ public class GameVersus extends AppCompatActivity {
         DisplayMetrics displaymetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
         int screenWidth = displaymetrics.widthPixels;
-        int button_size = (int) (screenWidth * 0.17);
+        int button_size = (int) (screenWidth * 0.20);
 
         disp_num1 = findViewById(R.id.display_num1);
         operator_p1 = findViewById(R.id.display_operator_p1);
@@ -81,6 +81,9 @@ public class GameVersus extends AppCompatActivity {
             p1_button[i].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    for (int i = 0; i < 4; i++){
+                        p1_button[i].setEnabled(false);
+                    }
                     if (p1_button[finalI].getText().toString().equals(ans_p1)){
                         p1_button[finalI].setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#5dff62"))); //correct
                         p1_button[finalI].setTextColor(ColorStateList.valueOf(Color.parseColor("#000000"))); //correct
@@ -113,6 +116,9 @@ public class GameVersus extends AppCompatActivity {
             p2_button[i].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    for (int i = 0; i < 4; i++){
+                        p2_button[i].setEnabled(false);
+                    }
                     if (p2_button[finalI].getText().toString().equals(ans_p2)){
                         p2_button[finalI].setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#5dff62"))); //correct
                         p2_button[finalI].setTextColor(ColorStateList.valueOf(Color.parseColor("#000000"))); //correct
@@ -193,13 +199,22 @@ public class GameVersus extends AppCompatActivity {
     private void generatePlayerOne(){
         for (int i = 0; i < 4; i++) {
             p1_button[i].setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#0E4292")));
-            p1_button[i].setTextColor(ColorStateList.valueOf(Color.parseColor("#ffffff"))); //correct
+            p1_button[i].setTextColor(ColorStateList.valueOf(Color.parseColor("#ffffff")));
+            p1_button[i].setEnabled(true);
         }
         int temp = 0;
         Random randomGenerator = new Random();
-        num1_p1 = randomGenerator.nextInt(100) + 1;
-        num2_p1 = randomGenerator.nextInt(100) + 1 ;
+        num1_p1 = randomGenerator.nextInt(10) + 1;
+        num2_p1 = randomGenerator.nextInt(10) + 1;
         operator_1 = randomGenerator.nextInt(4);
+
+        if (operator_1 == 3){
+            if (num1_p1 < num2_p1){
+                temp = num2_p1;
+                num2_p1 = num1_p1;
+                num1_p1 = temp;
+            }
+        }
 
         String op = "";
         switch (operator_1){
@@ -238,14 +253,22 @@ public class GameVersus extends AppCompatActivity {
     private void generatePlayerTwo(){
         for (int i = 0; i < 4; i++) {
             p2_button[i].setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#FE4948")));
-            p2_button[i].setTextColor(ColorStateList.valueOf(Color.parseColor("#ffffff"))); //correct
+            p2_button[i].setTextColor(ColorStateList.valueOf(Color.parseColor("#ffffff")));
+            p2_button[i].setEnabled(true);
         }
         int temp = 0;
         Random randomGenerator = new Random();
-        num1_p2 = randomGenerator.nextInt(100) + 1;
-        num2_p2 = randomGenerator.nextInt(100) + 1 ;
+        num1_p2 = randomGenerator.nextInt(10) + 1;
+        num2_p2 = randomGenerator.nextInt(10) + 1 ;
         operator_2 = randomGenerator.nextInt(4);
-
+        operator_2 = 3;
+        if (operator_2 == 3) {
+            if (num1_p2 < num2_p2) {
+                temp = num2_p2;
+                num2_p2 = num1_p2;
+                num1_p2 = temp;
+            }
+        }
         String op = "";
         switch (operator_2){
             case 0:

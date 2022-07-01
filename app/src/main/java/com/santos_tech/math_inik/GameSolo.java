@@ -212,10 +212,18 @@ public class GameSolo extends AppCompatActivity {
     private void randomizer(){
         int temp = 0;
         Random randomGenerator = new Random();
-        num1 = randomGenerator.nextInt(100) + 1;
-        num2 = randomGenerator.nextInt(100) + 1 ;
+        num1 = randomGenerator.nextInt(20) + 1;
+        num2 = randomGenerator.nextInt(20) + 1 ;
         operator = randomGenerator.nextInt(4);
         Log.d("Q:", String.valueOf(num1) + " " + String.valueOf(operator) + " " + String.valueOf(num2));
+
+        if (operator == 3) {
+            if (num1 < num2) {
+                temp = num2;
+                num2 = num1;
+                num1 = temp;
+            }
+        }
 
         String op = "";
         switch (operator){

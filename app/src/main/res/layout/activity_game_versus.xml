@@ -100,47 +100,55 @@
 
                 <Button
                     android:id="@+id/p1_guess1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_margin="4dp"
                     android:backgroundTint="@color/player_one"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
                     android:text="0"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:background="@drawable/ic_solo_guess_bg"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <Button
                     android:id="@+id/p1_guess2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_margin="4dp"
                     android:backgroundTint="@color/player_one"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
                     android:text="0"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:background="@drawable/ic_solo_guess_bg" />
 
                 <Button
                     android:id="@+id/p1_guess3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_margin="4dp"
                     android:backgroundTint="@color/player_one"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
                     android:text="0"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:background="@drawable/ic_solo_guess_bg" />
 
                 <Button
                     android:id="@+id/p1_guess4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_margin="4dp"
                     android:backgroundTint="@color/player_one"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
                     android:text="0"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:background="@drawable/ic_solo_guess_bg" />
             </LinearLayout>
 
@@ -224,47 +232,55 @@
 
                 <Button
                     android:id="@+id/p2_guess1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_margin="4dp"
                     android:backgroundTint="@color/player_two"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
                     android:text="0"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:background="@drawable/ic_solo_guess_bg"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <Button
                     android:id="@+id/p2_guess2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_margin="4dp"
                     android:backgroundTint="@color/player_two"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
                     android:text="0"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:background="@drawable/ic_solo_guess_bg" />
 
                 <Button
                     android:id="@+id/p2_guess3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_margin="4dp"
                     android:backgroundTint="@color/player_two"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
                     android:text="0"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:background="@drawable/ic_solo_guess_bg" />
 
                 <Button
                     android:id="@+id/p2_guess4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:layout_margin="4dp"
                     android:backgroundTint="@color/player_two"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
                     android:text="0"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     app:background="@drawable/ic_solo_guess_bg" />
             </LinearLayout>
 
