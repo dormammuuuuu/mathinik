@@ -80,6 +80,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/ic_scoreboard"
             android:fontFamily="@font/poppins_semibold"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="RESTART"
             android:textColor="@color/background" />
         <Space
@@ -94,6 +96,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/ic_scoreboard"
             android:fontFamily="@font/poppins_semibold"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
             android:text="Home"
             android:textColor="@color/background" />
         <Space

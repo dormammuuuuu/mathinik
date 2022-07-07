@@ -261,7 +261,6 @@ public class GameVersus extends AppCompatActivity {
         num1_p2 = randomGenerator.nextInt(10) + 1;
         num2_p2 = randomGenerator.nextInt(10) + 1 ;
         operator_2 = randomGenerator.nextInt(4);
-        operator_2 = 3;
         if (operator_2 == 3) {
             if (num1_p2 < num2_p2) {
                 temp = num2_p2;
